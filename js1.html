@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <h1>Java Script</h1>
+    <p> <b>reading input and printing output</b></p>
+    <script>document.write("demo")</script>
+    <p id="demo"></p>
+    <p><b>even odd program</b></p>
+    <p id="demo1"></p>
+    <p><b>sum of n numbers</b></p>
+    <p id="demo2"></p>
+    <p><b>For Loop</b></p>
+    <p id="demo3"></p>
+    <p><b>While Loop</b></p>
+    <p id="demo4"></p>
+    <h3>calculator</h3>
+    <div id="cal" style="height: 50px; width:300px; background-color:rgb(230, 230, 207); border-radius:10px; text-align:center; padding-top:20px;font-size:25px" ></div>
+    <button type="button" value="click" onclick="sum()">sum of two Numbers</button>
+
+    <script>
+        let person=prompt("enter the name of person");
+   
+        document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you ?";
+        console.log("Hi "+person);
+        alert("Welcomes you");
+         
+        let x=prompt("enter the x value")
+        if(x%2==0){
+            document.getElementById("demo1").innerHTML=x+" is even";
+        }
+        else{
+            document.getElementById("demo1").innerHTML=x+" is odd";
+        }
+        let n=prompt("enter n value")
+        let sum=0;
+        for(let i=0;i<n;i++)
+        {
+            sum=sum+i;
+        }
+        document.getElementById("demo2").innerHTML=sum ;
+    </script>
+    <script>
+        j=""
+        for (let i=0; i<=10 ;i++)  
+        {  
+            j=j+i+" "
+            document.getElementById("demo3").innerHTML=j;     
+        }  
+    </script>
+    <script> 
+        let i=0;
+        j=""
+        while(i<10)
+        {   j=j+i+" "
+            document.getElementById("demo4").innerHTML=j;    
+            i++;
+        }
+    </script> 
+    <script>
+        function sum()
+        {
+            var x=parseInt(prompt("x value is :"));
+            var y=parseInt(prompt("y value is :"));
+             
+            document.getElementById("cal").innerHTML=x+y;
+        }
+    </script>
+ -->
+    <script>
+        var trainee=[{
+            'name':'manoj',
+            'roll_no':'6152',
+            'college':'aec',
+            'branch':'aiml'
+        },
+        {
+            'name':'ganesh',
+            'roll_no':'6165',
+            'college':'aec',
+            'branch':'aiml'
+        },
+        {
+            'name':'mani',
+            'roll_no':'6161',
+            'college':'aec',
+            'branch':'aiml'
+        },
+        {
+            'name':'surya',
+            'roll_no':'6150',
+            'college':'aec',
+            'branch':'aiml'
+        },
+        {
+            'name':'yash',
+            'roll_no':'6123',
+            'college':'aec',
+            'branch':'aiml'
+        },
+        {
+            'name':'jayanth',
+            'roll_no':'6149',
+            'college':'aec',
+            'branch':'aiml'
+        }]
+        s=""
+        for(let i=0;i<trainee.length;i++)
+        {
+            console.log(trainee[i]);
+        }
+        for(let i=0;i<trainee.length;i++)
+        {
+            console.log(trainee[i].roll_no);
+        }
+        for(let i=0;i<trainee.length;i++)
+        {
+            s+=trainee[i].name+" "   
+        }
+        document.write( s +"<br>");
+        
+        for (var i=0;i<trainee.length;i++){
+            for (var key in trainee[i]){
+              document.write(trainee[i][key]+" ")
+            }
+            document.write("<br>")
+          }
+    </script> 
+    
+</body>
+</html>

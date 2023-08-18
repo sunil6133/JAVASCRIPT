@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	inputform</title>
+</head>
+<body>
+	<form>
+		<!-- //input -->
+		<label id="nam">NAME:</label>
+		<input id="iput" type="text" placeholder="enter your name" name="">
+		<br><br>
+		<label id="gend">Gender</label><br>
+		<input id="gend" type="radio" name="1"> 
+		<label>Male</label><br>
+		<input id="gend" type="radio" name="1">
+		<label>Female</label>
+	</form>
+	<!-- //names -->
+	<p id="p">HTML</p>
+	<p id="p1">CSS</p>
+	<p id="p2">BOOTSTRAP</p>
+	<p id="p3">JAVASCRIPT</p>
+	<ul>
+		<!-- //lists -->
+		<li>AEC</li>
+		<li>ACET</li>
+		<li>ACOE</li>
+	</ul>
+<table class="tb" style="border: 3px solid black;">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+	</tr>
+
+</table>
+
+	
+
+</body>
+<script type="text/javascript">
+		<!-- //input -->
+		document.getElementById('iput').style.color='red';
+		document.getElementById('nam').style.color='skyblue';
+		let g=document.getElementById('gend');
+		console.log(g);
+		g[1].style.color='red';
+
+
+
+		document.getElementById('p').style.color='red';
+		document.getElementById('p1').style.color='skyblue';
+		document.getElementById('p2').style.color='red';
+		document.getElementById('p3').style.color='skyblue';
+
+		let lis = document.getElementByTagName('li');
+		console.log(lis)
+		lis[0].innerText = 'Aditya Engineering College';
+		lis[1].innerText = 'Aditya College of Engineering and Technology';
+		lis[2].innerText = 'Aditya College of Engineering';
+// table
+		let tds = document.getElementsByTagName('td');
+		var k=9;
+		for (var i=0; i<tds.length; i++)
+		{
+			tds[i].innerText = k;
+			k--;
+		}
+
+	</script>
+</html>
